@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点名小程序</title>
+    <style>
+        .callname {
+            text-align: center;
+            padding: 10px;
+        }
+
+        body {
+            background-color: lightyellow;
+        }
+
+        .div1 {
+            text-align: center;
+            margin: 1px 300px;
+            padding: 30px 30px;
+            border-style: groove;
+
+
+        }
+
+        .input_people {
+            background-color: lavenderblush;
+            position: fixed;
+            right: 40px;
+            top: 400px;
+        }
+
+
+        .useCallName {
+            position: fixed;
+            top: 450px;
+            right: 160px;
+        }
+
+        .usePause {
+            position: fixed;
+            top: 450px;
+            right: 60px;
+        }
+
+        .p_people {
+            text-align: center;
+            position: fixed;
+            right: 100px;
+            top: 350px;
+        }
+        .callname_exegesis{
+            text-align: right;
+            position: fixed;
+            right: 80px;
+            top: 250px;
+        }
+        .button1 {
+            background-color: #FFA500;
+            text-align: center;
+            padding: 10px 10px;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+
+        }
+
+        .div3 {
+            margin: 10px 300px;
+            padding: 30px 30px;
+            border-style: groove;
+        }
+
+
+        .button2{
+            background-color: #FFA500;
+            text-align: center;
+            padding: 10px 10px;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+        }
+
+
+    </style>
+</head>
+<body>
+<h1 class="callname">点 名 小 程 序</h1>
+<div class="div1">
+    <table border="1" height="10">
+<!--        每个人tr尽量不得超过9个，-->
+        <!--        <tr>-->
+        <!--            <th width="70px" id=""></th>-->
+        <!--            <th width="70px" id=""></th>-->
+        <!--            <th width="70px" id=""></th>-->
+        <!--            <th width="70px" id=""></th>-->
+        <!--            <th width="70px" id=""></th>-->
+        <!--            <th width="70px" id=""></th>-->
+        <!--            <th width="70px" id=""></th>-->
+        <!--            <th width="70px" id=""></th>-->
+        <!--            <th width="70px" id=""></th>-->
+        <!--        </tr>-->
+        <tr>
+            <th width="70px" id="s1">张三</th>
+            <th width="70px" id="s2">李四</th>
+            <th width="70px" id="s3">王五</th>
+            <th width="70px" id="s4">赵六</th>
+            <th width="70px" id="s5">xx1</th>
+            <th width="70px" id="s6">xx2</th>
+            <th width="70px" id="s7">xx3</th>
+            <th width="70px" id="s8">xx4</th>
+            <th width="70px" id="s9">xx5</th>
+        </tr>
+        <tr>
+            <th width="70px" id="s10">xx6</th>
+
+
+
+
+    </table>
+</div>
+<div class="div3">
+    <span id="p1"></span> <span id="p26"></span> <span id="p51"></span> <span id="p76"></span>
+    <span id="p2"></span> <span id="p27"></span> <span id="p52"></span> <span id="p77"></span>
+    <span id="p3"></span> <span id="p28"></span> <span id="p53"></span> <span id="p78"></span>
+    <span id="p4"></span> <span id="p29"></span> <span id="p54"></span> <span id="p79"></span>
+    <span id="p5"></span> <span id="p30"></span> <span id="p55"></span> <span id="p80"></span>
+    <span id="p6"></span> <span id="p31"></span> <span id="p56"></span> <span id="p81"></span>
+    <span id="p7"></span> <span id="p32"></span> <span id="p57"></span> <span id="p82"></span>
+    <span id="p8"></span> <span id="p33"></span> <span id="p58"></span> <span id="p83"></span>
+    <span id="p9"></span> <span id="p34"></span> <span id="p59"></span> <span id="p84"></span>
+    <span id="p10"></span> <span id="p35"></span> <span id="p60"></span> <span id="p85"></span>
+    <span id="p11"></span> <span id="p36"></span> <span id="p61"></span> <span id="p86"></span>
+    <span id="p12"></span> <span id="p37"></span> <span id="p62"></span> <span id="p87"></span>
+    <span id="p13"></span> <span id="p38"></span> <span id="p63"></span> <span id="p88"></span>
+    <span id="p14"></span> <span id="p39"></span> <span id="p64"></span> <span id="p89"></span>
+    <span id="p15"></span> <span id="p40"></span> <span id="p65"></span> <span id="p90"></span>
+    <span id="p16"></span><span id="p41"></span> <span id="p66"></span> <span id="p91"></span>
+    <span id="p17"></span><span id="p42"></span> <span id="p67"></span> <span id="p92"></span>
+    <span id="p18"></span><span id="p43"></span> <span id="p68"></span> <span id="p93"></span>
+    <span id="p19"></span><span id="p44"></span> <span id="p69"></span> <span id="p94"></span>
+    <span id="p20"></span><span id="p45"></span> <span id="p70"></span> <span id="p95"></span>
+    <span id="p21"></span><span id="p46"></span> <span id="p71"></span> <span id="p96"></span>
+    <span id="p22"></span><span id="p47"></span> <span id="p72"></span> <span id="p97"></span>
+    <span id="p23"></span><span id="p48"></span> <span id="p73"></span> <span id="p98"></span>
+    <span id="p24"></span><span id="p49"></span> <span id="p74"></span> <span id="p99"></span>
+    <span id="p25"></span><span id="p50"></span> <span id="p75"></span> <span id="p100"></span>
+
+</div>
+<div class="use_it">
+    <div class="useCallName">
+        <button id="button1" class="button1" onmousedown="down1()" onmouseup="up1()"onclick="useButton()">点 名</button>
+    </div>
+    <div class="usePause">
+        <button id="button2" class="button2"  onmousedown="down2()" onmouseup="up2()" onclick="useReload()">刷 新</button>
+    </div>
+
+    <input id="input_number" class="input_people" type="text">
+
+    <p class="p_people">
+        需要点名的人数:
+    </p>
+    <div class="callname_exegesis">
+      <p>用法：点击一次，即刻炼化</p>
+            <p>用后刷新，再来一次</p>
+    </div>
+
+</div>
+
+<script>
+    //点名核心代码
+    var return_name, display_name, produce_name, input_number, times, receive_number;
+    var i, k;
+    var y, z;
+
+    function useButton() {
+        times = window.setInterval("callName()", 500);
+    }
+
+    function useReload() {
+        window.clearInterval(times);
+        window.location.reload();
+    }
+    function down2(){
+          document.getElementById("button2").style.backgroundColor="gray";
+
+    }
+    function up2(){
+        document.getElementById("button2").style.backgroundColor="#FFA500";
+
+    }
+    function down1(){
+        document.getElementById("button1").style.backgroundColor="gray";
+    }
+    function up1(){
+
+        document.getElementById("button1").style.backgroundColor="#FFA500";
+    }
+
+
+
+    function callName() {
+        debugger;
+        receive_number = new Set();
+        input_number = parseInt(document.getElementById("input_number").value);
+      //先获取input_number的值，然后再用随机数赋值给一个变量k，把变量添加到set集合中去
+        //用do-while循环把控set集合，因为set集合不能储存重复元素！《《《核心
+       do {
+           k = (String(Math.round(Math.random() * 73)));
+           console.log(receive_number.add(k));
+       }while(receive_number.size<=input_number);
+
+        //先把值赋给y，z两个变量。因为用next（）.value会依次取值
+        console.log(y = receive_number.values());
+        console.log(z = receive_number.values());
+        //然后就开始遍历
+        for (i = 1; i <= input_number; i++) {
+            console.log(produce_name = "s" + y.next().value);
+            console.log(display_name = "p" + z.next().value);
+            console.log(return_name = document.getElementById(produce_name).innerHTML);
+            console.log(document.getElementById(display_name).innerHTML =return_name  +"&nbsp"+ "&nbsp");
+
+        }
+        window.clearInterval(times);
+    }
+</script>
+
+</body>
+</html>
